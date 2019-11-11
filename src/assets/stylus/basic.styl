@@ -1,26 +1,31 @@
 /*
  * 基础样式（适用于整个项目），包括：
- *   - CSS Reset
+ *   - CSS reset
+ *   - function style
  * @Author: xurenda <xurenda@qq.com>
  * @Github: https://github.com/xurenda
  * @Date: 2019-11-11 19:02:02
- * @LastEditTime: 2019-11-11 21:17:22
+ * @LastEditTime: 2019-11-11 22:55:57
  * @FilePath: \my-home-page\src\assets\stylus\basic.styl
  */
 
-// CSS Reset
+ @import './variables'
+
+/* CSS Reset */
 body
   font-family -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif
-  font-size 14px
-  color #162c5a
+  font-size $font-size
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  color $font-color
   line-height 1.5em
-  background-color #fff
+  background-color $background-color-1
   overflow-x hidden
   margin 0
-  min-width 1200px
+  min-width $container-width + 100px
   min-height 100vh
 a
-  color #162c5a
+  color $font-color
   text-decoration none
 h1
 h2
@@ -28,8 +33,22 @@ h3
 h4
 h5
 h6
-  font-size 1rem
   margin 0
+  color $title-color
+  font-weight 300
+  line-height 1.5rem
+h1
+  font-size 2rem
+h2
+  font-size 2rem
+h3
+  font-size 1.17rem
+h4
+  font-size 1rem
+h5
+  font-size 0.83rem
+h6
+  font-size 0.67rem
 p
   margin 0
   line-height 1.5em
@@ -37,10 +56,27 @@ ul
   padding 0
 li
   list-style none
-input,
-textarea,
+input
+textarea
 button
   all reset
 *::placeholder
-  color #9a9a9a
+  color $placeholder-color
   font-weight 400
+
+/* 功能类 */
+
+// 容器
+.container
+  width $container-width
+  margin 0 auto
+  text-align center
+  padding 100px 0
+
+// 小分割线
+.cut-line
+  display inline-block
+  height 3px
+  width 50px
+  margin 26px 0
+  background-color $main-fore-color

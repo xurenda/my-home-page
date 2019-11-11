@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "description": "个人网址web项目，地址：http://xurenda.top/，github：https://github.com/xurenda/my-home-page",
   "private": true,
+  "keywords": [
+    "Vue.js",
+    "home-page"
+  ],
+  "author": "xurenda <xurenda@qq.com>",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -27,12 +33,6 @@
     "stylus-loader": "^3.0.2",
     "vue-template-compiler": "^2.6.10"
   },
-  "keywords": [
-    "Vue.js",
-    "home-page"
-  ],
-  "author": "xurenda <xurenda@qq.com>",
-  "license": "MIT",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"

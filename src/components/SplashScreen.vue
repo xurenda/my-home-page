@@ -1,9 +1,9 @@
 <!--
- * SplashScreen 飞溅屏幕（启动画面）
+ * splash-screen 飞溅屏幕（启动画面）
  * @Author: xurenda <xurenda@qq.com>
  * @Github: https://github.com/xurenda
  * @Date: 2019-11-11 18:43:56
- * @LastEditTime: 2019-11-11 21:06:07
+ * @LastEditTime: 2019-11-11 23:42:38
  * @FilePath: \my-home-page\src\components\SplashScreen.vue
  -->
 <template>
@@ -28,12 +28,14 @@
 import { ParallaxContainer, ParallaxElement } from 'vue-mouse-parallax'
 
 export default {
-  name: 'SplashScreen',
+  name: 'splash-screen',
   components: { ParallaxContainer, ParallaxElement }
 }
 </script>
 
 <style lang="stylus">
+@import '~@/assets/stylus/variables'
+
 #splash-screen
   width 100vw
   height 100vh
@@ -41,13 +43,13 @@ export default {
   position relative
   background-color #000
   &::after
-      content ''
-      position absolute
-      top 0
-      bottom 0
-      left 0
-      right 0
-      background-color rgba(0, 0, 0, .5)
+    content ''
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    background-color rgba(0, 0, 0, .5)
   img.background-img
     height 104vh
     user-select none
@@ -67,19 +69,20 @@ export default {
         font-size 20px
       .em
         font-size 1.1em
-        color #f4d03f
+        color $main-fore-color
     .more
       cursor pointer
       display inline-block
       padding 12px 15px
       margin-top 26px
-      background-color #f4d03f
+      background-color $main-fore-color
       border-radius 6px
       font-size 18px
+      color #000
       font-weight 700
       text-transform uppercase
       transition all 0.5s ease-in-out
       &:hover
         background-color transparent
-        color #666
+        color $font-color
 </style>
