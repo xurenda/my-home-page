@@ -3,14 +3,14 @@
  * @Author: xurenda <xurenda@qq.com>
  * @Github: https://github.com/xurenda
  * @Date: 2019-11-11 18:43:56
- * @LastEditTime: 2019-11-11 23:42:38
+ * @LastEditTime: 2019-11-12 22:46:13
  * @FilePath: \my-home-page\src\components\SplashScreen.vue
  -->
 <template>
 <parallax-container id="splash-screen">
   <!-- 背景 -->
   <parallax-element :parallaxStrength="20">
-    <img class="background-img" src="~@/assets/img/splash-screen-bg.jpg">
+    <img class="background-img" src="/img/splash-screen-bg.jpg">
   </parallax-element>
 
   <!-- 文字 -->

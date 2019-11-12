@@ -3,7 +3,7 @@
  * @Author: xurenda <xurenda@qq.com>
  * @Github: https://github.com/xurenda
  * @Date: 2019-11-11 19:08:09
- * @LastEditTime: 2019-11-11 23:05:00
+ * @LastEditTime: 2019-11-12 21:49:32
  * @FilePath: \my-home-page\src\assets\js\data.js
  */
 
@@ -24,3 +24,52 @@ export const aboutMe = {
     '有姿势水平的社会主义新青年。请多指教！'
   ]
 }
+
+// 我的作品
+export const myWorks = [
+  {
+    title: 'ElegantSurf | 优雅冲浪',
+    desc: '简洁美观的浏览器起始页',
+    tags: [ 'Web网站', '线上应用' ],
+    url: '//home.xurenda.top',
+    imgName: 'elegant-surf.jpg'
+  },
+  {
+    title: 'SharpFactory',
+    desc: 'SharpFactory工作室官方网站',
+    tags: [ 'Web网站', '线上应用' ],
+    url: '//sharpfactory.top',
+    imgName: 'sharp-factory.jpg'
+  }
+]
+
+// 尾部导航
+export const bottomNav = [
+  {
+    title: '友情链接',
+    sub: [
+      { title: 'SharpFactory', url: '//sharpfactory.top' },
+      { title: 'Sylcool', url: '//sylcool.xyz' }
+    ]
+  },
+  {
+    title: '我的',
+    sub: [
+      { title: 'Github', url: '//github.com/xurenda' },
+      { title: '码云', url: '//gitee.com/xurenda' },
+      { title: '语雀', url: '//www.yuque.com/xiuran' }
+    ]
+  },
+  {
+    title: '与我联系',
+    sub: [
+      { title: '邮箱', content: 'xurenda@qq.com' }
+    ]
+  }
+]
+
+// 版权声明
+export const copyright = 'Copyright ©2018-2020 Xurenda All rights reserved.'
+
+// 备案信息
+export const recordCode = '蒙ICP备18003120号-1'
