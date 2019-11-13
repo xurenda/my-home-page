@@ -3,7 +3,7 @@
  * @Author: xurenda <xurenda@qq.com>
  * @Github: https://github.com/xurenda
  * @Date: 2019-11-11 18:43:56
- * @LastEditTime: 2019-11-12 22:46:13
+ * @LastEditTime: 2019-11-13 12:55:17
  * @FilePath: \my-home-page\src\components\SplashScreen.vue
  -->
 <template>
@@ -19,17 +19,33 @@
     <p>I am <span class="em">xurenda</span>!</p>
     <p class="big">A progressive learner</p>
     <p class="small">This is my website for <span class="em">recording</span> and <span class="em">sharing</span> knowledge</p>
-    <div class="more">learn more</div>
+    <div class="more" @click="learnMore">learn more</div>
   </div>
 </parallax-container>
 </template>
 
 <script>
 import { ParallaxContainer, ParallaxElement } from 'vue-mouse-parallax'
+import { scrollSmoothTo } from '@/assets/js/utils'
 
 export default {
   name: 'splash-screen',
-  components: { ParallaxContainer, ParallaxElement }
+  components: { ParallaxContainer, ParallaxElement },
+  data () {
+    return {
+      // 点击 learn more，页面要滚动到的位置
+      target: window.innerHeight || document.body.clientHeight
+    }
+  },
+  methods: {
+    /**
+     * @description: 滚动页面到正文
+     * @return {void}
+     */
+    learnMore () {
+      scrollSmoothTo(this.target)
+    }
+  }
 }
 </script>
 
@@ -37,7 +53,7 @@ export default {
 @import '~@/assets/stylus/variables'
 
 #splash-screen
-  width 100vw
+  max-width 100vw
   height 100vh
   overflow hidden
   position relative

@@ -2,7 +2,7 @@
  * @Author: xurenda <xurenda@qq.com>
  * @Github: https://github.com/xurenda
  * @Date: 2019-11-11 18:43:56
- * @LastEditTime: 2019-11-11 23:17:57
+ * @LastEditTime: 2019-11-13 13:26:46
  * @FilePath: \my-home-page\src\App.vue
  -->
 <template>
@@ -22,6 +22,8 @@
 </template>
 
 <script>
+import { consoleText } from '@/assets/js/data'
+
 import SplashScreen from './components/SplashScreen'
 import AboutMe from './components/AboutMe'
 import MyWorks from './components/MyWorks'
@@ -34,9 +36,15 @@ export default {
     AboutMe,
     MyWorks,
     AppFooter: Footer
+  },
+  created () {
+    window.console.log(consoleText)
   }
 }
 </script>
 <style lang="stylus">
 @import './assets/stylus/basic.styl'
+
+#app
+  min-width $container-width + 100px
 </style>

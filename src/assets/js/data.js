@@ -3,25 +3,40 @@
  * @Author: xurenda <xurenda@qq.com>
  * @Github: https://github.com/xurenda
  * @Date: 2019-11-11 19:08:09
- * @LastEditTime: 2019-11-12 21:49:32
+ * @LastEditTime: 2019-11-13 13:23:22
  * @FilePath: \my-home-page\src\assets\js\data.js
  */
+
+// console
+export const consoleText = `
+*********************************
+ hi，我是徐任达，欢迎来到我的主页！
+ 您可以与我联系：
+   email：xurenda@qq.com
+   QQ：1446355371
+   WX: kingen666
+*********************************
+
+`
 
 // 关于我
 export const aboutMe = {
   // 标签
-  tags: ['00后', 'XMFLSer', '文科生', '技术宅'],
+  tags: ['Coder', '理工男', '技术宅', '努力进步中'],
   // 描述
   presentation: [
-    '我是徐任达。人如其名般看似内敛，心中却狂放不羁皮得一批。',
-    '高中毕业于厦门外国语学校，现就读于南京大学英语系；',
-    '有很多大胆的想法，也热衷于钻研与计算机有关的一切：',
-    '编程、UI设计、Photoshop、视频后期、游戏建模...',
-    '以及容易让人联想起哲学问题的天文、摄影、编导...',
-    '身为强迫症与拖延症患者、懒癌晚期，',
-    '依然坚持在某知名视频站做一名不知名up主。',
-    '正在努力成为一个善于谈笑风生、',
-    '有姿势水平的社会主义新青年。请多指教！'
+    '我',
+    '99年 双鱼',
+    '性格内敛 脾气随和 不善言说',
+    '有点故事 俗不可耐 不足挂齿',
+    'Just so so 尤热衷于计算机相关知识',
+    '软件要玩 硬件也搞 系统亦不在话下',
+    '装机、Linux、编程、UI设计、Photoshop、视频后期、游戏建模...',
+    '杂七杂八 样样稀松',
+    '幸 正在努力，愿 不负众望',
+    '曾难自拔于世界之大',
+    '也沉溺于其中梦话',
+    '不得真假 不做挣扎 不惧笑话'
   ]
 }
 
@@ -69,7 +84,7 @@ export const bottomNav = [
 ]
 
 // 版权声明
-export const copyright = 'Copyright ©2018-2020 Xurenda All rights reserved.'
+export const copyright = 'Copyright ©2018-2020 xurenda.top All rights reserved.'
 
 // 备案信息
 export const recordCode = '蒙ICP备18003120号-1'
